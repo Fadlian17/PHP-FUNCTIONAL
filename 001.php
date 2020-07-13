@@ -1,10 +1,11 @@
 <?php
+//capitalize word
 
-// nomor 1
-$capitalize = function ($str) {
-    $capital = ucwords($str);
-    return $capital;
-};
-
-// echo $capitalize("hello world again");
-echo "\n";
+function capitalizes($word)
+{
+    return ucwords($word);
+}
+$word = 'hello word again';
+echo "==Capitalize Word== \n";
+$words = capitalizes($word);
+echo $words;
